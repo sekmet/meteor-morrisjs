@@ -4,7 +4,7 @@ A wrapper for version 0.5.1 of the JavaScript charting library [morris.js](http:
 
 ## Install
 ``` sh
-meteor add bshamblen:morrisjs
+meteor add skt:morrisjs
 ```
 
 ## Your first chart
