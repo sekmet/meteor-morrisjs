@@ -8,7 +8,7 @@ Package.describe({
 
 Package.onUse((api) => {
   api.versionsFrom('1.4');
-  api.use('skt:raphael', 'client');
+  api.use('skt:raphael', 'client', {weak: true});
   api.addFiles('morris.css', 'client');
   api.mainModule('morris.js', 'client');
 });
