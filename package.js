@@ -1,14 +1,14 @@
 Package.describe({
-  name: 'bshamblen:morrisjs',
-  version: '0.5.3',
+  name: 'skt:morrisjs',
+  version: '0.1.0',
   summary: 'Charting library Morris.js v0.5.1',
-  git: 'https://github.com/bshamblen/meteor-morrisjs.git',
+  git: 'https://github.com/sekmet/meteor-morrisjs.git',
   documentation: 'README.md'
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.0.3.2');
-  api.use(['jquery', 'clubfest:raphael@1.0.0']);
-  api.addFiles('morris.js', 'client');
+  api.versionsFrom('1.4');
+  api.use(['jquery', 'skt:raphael']);
   api.addFiles('morris.css', 'client');
+  api.mainModule('morris.js', 'client');
 });
