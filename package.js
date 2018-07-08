@@ -6,9 +6,10 @@ Package.describe({
   documentation: 'README.md'
 });
 
-Package.onUse(function(api) {
+Package.onUse((api) => {
   api.versionsFrom('1.4');
-  api.use(['jquery', 'skt:raphael']);
+  api.use('jquery', 'client', {weak: true});
+  api.use('skt:raphael', 'client');
   api.addFiles('morris.css', 'client');
   api.mainModule('morris.js', 'client');
 });
